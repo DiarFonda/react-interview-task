@@ -1,41 +1,53 @@
-# Flex Business Solutions Tech Test - Inventory Management
+Flex Project
 
-In Flex Business Solutions, we aim to provide excellence and efficiency on all our lines of code in order to support the day-to-day activities of the company using our software solutions. In this task, you will be provided with a simple design of an app, fetching a list of products from an external source and allowing the user to search or filter among the list.
+    This project is a basic version of the required task provided for the interview. Given that I have limited experience with the tech stack you use, I decided to implement the solution using simple React and Ant Design for the frontend and Supabase for the backend. I built the backend APIs using ExpressJS and focused primarily on implementing the core logic of how the app functions. However, I did not dive deeply into the specific business logic requirements, as I understood this was an interview task and I didn’t want to bother with too many questions.
+
+Tech Stack
+
+    Frontend: React with Ant Design for UI components
+    Backend: Supabase and ExpressJS for API handling
+
+Running the Project
+
+    This project is structured as a monorepo. To get it up and running, follow these steps:
+
+    Navigate to the project root:
+        cd flex-project
+
+    Start the frontend:
+        npm run start:frontend
+
+    In another terminal tab, start the backend:
+        npm run start:backend
+
+        How might you make this app more secure?
+
+             Implement secure authentication mechanisms (e.g., JWT) to restrict access to certain routes and ensure only authorized users can access the app.
+
+             Validate and sanitize all inputs, especially user-generated data, to prevent security vulnerabilities like SQL injection and XSS attacks.
+
+             Ensure that all communication between the client and server happens over HTTPS to prevent man-in-the-middle attacks.
+
+             Move sensitive data, such as API keys and database credentials, to environment variables rather than hardcoding them in the codebase.
 
 
-### Tech Test Overview
-We have provided below the Figma link of this task. On the main page, we have a list of job sites with their corresponding status. By clicking the "Create" button we can create other job sites and add them to the list. By clicking to the jobsite name, we are redirected to the inventory dashboard for that particular job site. There, we can update items inside categories by double cliking on each cell where the content of that row will automatically be shown on the modal. Updating any specific column and hitting "Save", the content of the table should be automatically updated.
 
-[FIGMA] [https://www.figma.com/file/uOxY3AiUFaGuxsU9nk0H1O/ReactJs-Test?node-id=0%3A1]
+         How would you make this solution scale to millions of records?
 
-We love to see:
-- Functional code
-- Good design
-- Unit testing
+             Ensure the database has proper indexing to make searching and fetching data faster.
 
+             We could implement pagination on both the frontend and backend so the app doesn't load too much data at once.
 
-### Notes
-All of you work should take place inside this repository.
+             We could use load balancing to spread traffic across different servers, ensuring the app stays fast and available.
 
-You are free to use any packages that would help with this task
+             We could use caching (e.g., Redis) for frequently requested data to reduce the load on the database.
 
-You do not need to add additional security measures as part of this exercise.
-We're interested in how you break down the work and build your solution in a clean, easy-to-use, reusable and testable manner.
+             Add more servers as the app grows. This can be done with cloud services like AWS or Google Cloud.
 
+             While Supabase is great for smaller projects, for a larger app that needs to scale, it might make sense to use a custom-built backend to get more control over performance and scaling.
 
-## Deliverables
-You must follow the Figma design and need to add the functionality of:
-a) Create new job sites with their categories
-c) Search job sites & items on the inventory page
-b) Update items on each category
+Portfolio
 
-**Create a folder inside the repository and include finished screenshots of the app.**
-**Please make sure to update the readme with**:
+    To learn more about my skills and recent projects, feel free to check my portfolio website:
 
-- How to run your app with all the necessary details
-- Relating to the task please add answers to the following questions;
-    1. How might you make this app more secure?
-    2. How would you make this solution scale to millions of records?
-  
-
-On completion email a link to your repository to your contact at FLEX BUSINESS SOLUTIONS and ensure it is publicly accessible.
+        https://www.diarfonda.com/resume

@@ -1,0 +1,109 @@
+.home {
+  padding: 10px 0;
+}
+
+.header {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: 3px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.category {
+  width: 33%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: white;
+  font-size: 20px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.one {
+  background-color: #ecde7c;
+}
+
+.one:hover {
+  background-color: #b8ab44;
+}
+
+.two {
+  background-color: #7ac14d;
+}
+
+.two:hover {
+  background-color: #509525;
+}
+
+.three {
+  background-color: #fe4c4a;
+}
+
+.three:hover {
+  background-color: #8b211f;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.createButton {
+  width: 10%;
+  margin-right: 10px;
+  background-color: #71cf48;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.tag {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobsiteText {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+.jobsiteText:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .createButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .createButton .ant-divider {
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .createButton {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .createButton .ant-divider {
+    height: 16px;
+  }
+}

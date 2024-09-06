@@ -1,0 +1,141 @@
+.container {
+  background-color: antiquewhite;
+  height: 90vh;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.menuWrapper {
+  flex: 0 0 256px;
+  margin-right: 15px;
+  background-color: white;
+  border-radius: 8px;
+  height: 100%;
+  padding: 15px;
+}
+
+.optionsWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.option {
+  flex: 1 1 100px;
+  max-width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.onHold {
+  background-color: #fe4c4a;
+}
+
+.onHold:hover {
+  background-color: #8b211f;
+}
+
+.onProgress {
+  background-color: #ecde7c;
+}
+
+.onProgress:hover {
+  background-color: #b8ab44;
+}
+
+.completed {
+  background-color: #7ac14d;
+}
+
+.completed:hover {
+  background-color: #509525;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancelButton {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.saveButton {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.selected {
+  border: 4px solid black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menuWrapper {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .optionsWrapper {
+    flex: 1 0 auto;
+    padding: 10px;
+  }
+
+  .option {
+    max-width: none;
+    height: 80px;
+    margin-bottom: 40px;
+  }
+
+  .buttonContainer {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 480px) {
+  .option {
+    font-size: 14px;
+    height: 60px;
+  }
+
+  .buttonContainer {
+    gap: 5px;
+  }
+
+  .menuWrapper {
+    padding: 10px;
+  }
+
+  .optionsWrapper {
+    padding: 10px;
+  }
+}
